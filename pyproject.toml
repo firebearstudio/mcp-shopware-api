@@ -1,7 +1,7 @@
 [project]
 name = "mcp-shopware-api"
 version = "0.1.0"
-description = "MCP server for Shopware 6 API integration"
+description = "MCP server for Shopware 6 Admin API integration"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -9,6 +9,9 @@ dependencies = [
     "httpx>=0.25.0",
     "python-dotenv>=1.0.0",
 ]
+
+[project.scripts]
+mcp-shopware-api = "mcp_shopware_api.server:main"
 
 [project.optional-dependencies]
 dev = [
