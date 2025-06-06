@@ -63,6 +63,26 @@ To get your API credentials:
 - `API_KEY`: Your Shopware Admin API Access Key ID
 - `API_SECRET`: Your Shopware Admin API Secret Access Key
 
+## Prompts
+
+### `ready_to_ship_orders`
+**Automatically retrieve and format Shopware orders that are paid but not yet shipped.**
+
+This intelligent prompt:
+- Executes complex API queries to find orders in "paid" transaction state and "open" delivery state
+- Dynamically retrieves state machine UUIDs for accurate filtering
+- Loads comprehensive order data including customer info, products, and shipping addresses
+- Returns formatted instructions for displaying results in a clear table format
+
+**What it provides:**
+- Order numbers and dates
+- Product details with quantities and pricing
+- Complete shipping addresses
+- Payment and delivery status information
+- Sorted by newest orders first
+
+**Use case:** Perfect for fulfillment workflows where you need to quickly identify which orders are ready for shipping and packaging.
+
 ## Available Tools
 
 ### Entity Search & Retrieval Tools
