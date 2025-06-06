@@ -55,6 +55,8 @@ Thumbs.db
 .claude/
 CLAUDE.md
 docs/
+memory-bank/
+.clinerules
 
 # uv
 .python-version
